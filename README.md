@@ -26,8 +26,9 @@ Or install it yourself as:
 
     end
 
-    number_of_user_registered_today = User.registered.today.count
-    all_users_registered_last_month = User.registered.last_month.all
+    User.registered.today.count
+    User.registered.last_month.all
+    User.registered.
 
 
 ## Contributing
