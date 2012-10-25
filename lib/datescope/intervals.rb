@@ -24,6 +24,10 @@ module DateScope
     def self.month_before_last_month
       {:start => 2.month.ago.beginning_of_month, :end => 2.month.ago.end_of_month}
     end
+
+    def self.all
+      {:start => Time.at(0), :end => Time.at(2**31-1)}
+    end
   end
 
 end
