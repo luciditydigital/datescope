@@ -26,9 +26,12 @@ Or install it yourself as:
 
     end
 
-    User.registered.today.count
-    User.registered.last_month.all
-    User.registered.
+    User.registered.today
+    User.registered.this_week
+    User.registered.this_month
+    User.registered.last_month
+    User.registered.month_before_last_month
+    User.registered.this_year
 
 
 ## Contributing
