@@ -29,3 +29,5 @@ module DateScope
 end
 
 ActiveRecord::Base.send(:extend, DateScope::Extension)
+ActiveRecord::Relation.send(:include, DateScope::Extension)
+
