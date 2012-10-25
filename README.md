@@ -1,6 +1,6 @@
 # Datescope
 
-TODO: Write a gem description
+Adding date scopes to ActiveRecord models to create statistics easily.
 
 ## Installation
 
@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    class User < ActiveRecord::Base
+
+      def self.registered
+        self
+      end
+
+    end
+
+    number_of_user_registered_today = User.registered.today.count
+    all_users_registered_last_month = User.registered.last_month.all
+
 
 ## Contributing
 
