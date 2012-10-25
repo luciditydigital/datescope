@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["nucc@lucidity.ie"]
   gem.description   = %q{Extends the ActiveRecord models with date scopes}
   gem.summary       = %q{Date scopes for ActiveRecord}
-  gem.homepage      = "http://lucidity.ie"
+  gem.homepage      = "http://github.com/luciditydigital/datescope"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
